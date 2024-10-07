@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.layout {
+  min-height: 100vh;
+}
+
+.header {
+  background: #7f58af;
+  color: white;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
