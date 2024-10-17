@@ -47,19 +47,27 @@
   text-align: center;
 }
 
-.centered-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
 .rectangle {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  width: 600px; /* Вы можете изменить ширину по своему усмотрению */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+}
+
+.text-justify {
+  margin-top: 20px;
+  text-align: justify; /* Выравнивание по ширине */
+  line-height: 1.5;   /* Увеличение расстояния между строками */
+  font-size: 18px;    /* Увеличение размера шрифта */
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: 16px;    /* Установка размера шрифта для заголовков */
+}
+
+.sub-header {
+  margin-top: 20px; 
 }
