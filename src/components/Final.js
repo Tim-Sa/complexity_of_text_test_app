@@ -12,6 +12,21 @@ const Final = () => (
   </div>
 );
 
-const centeredContainerStyle = { /* стили такие же */ };
-const rectangleStyle = { /* стили такие же */ };
+const centeredContainerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '100%',
+};
 
+const rectangleStyle = {
+  border: '1px solid #ddd',
+  borderRadius: '8px',
+  padding: '20px',
+  width: '600px',
+  boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+  backgroundColor: '#fff',
+};
+
+export default Final;
