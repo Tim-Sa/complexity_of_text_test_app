@@ -16,6 +16,7 @@ COPY . .
 # Build the React app for production
 RUN npm run build
 
+# Now we have the build folder, we can proceed to serve it with Nginx
 FROM nginx:alpine
 
 # Удаляем стандартный конфигурационный файл
@@ -25,7 +26,7 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/
 
 # Копируем статические файлы приложения в директорию Nginx
-COPY build/ /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html
 
 # Открываем порт 80
 EXPOSE 80
