@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+}
+
+.rectangle {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.text-justify {
+  margin-top: 20px;
+  text-align: justify; /* Выравнивание по ширине */
+  line-height: 1.5;   /* Увеличение расстояния между строками */
+  font-size: 18px;    /* Увеличение размера шрифта */
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: 16px;    /* Установка размера шрифта для заголовков */
+}
+
+.sub-header {
+  margin-top: 20px; 
+}
