@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rectangle {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 600px; /* Вы можете изменить ширину по своему усмотрению */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
